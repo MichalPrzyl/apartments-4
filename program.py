@@ -9,3 +9,4 @@ from scrapper import Scrapper
 
 scrapper = Scrapper(URLS)
 scrapper.scrap_all_urls()
+scrapper.save_results_to_json_file()
