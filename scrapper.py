@@ -21,7 +21,7 @@ class Scrapper:
             soup = BeautifulSoup(page.content, "html.parser")
             ad_price_container = soup.find("div", {"data-testid": "ad-price-container"})
 
-            # Wyciągnięcie wartości liczbowej ceny
+            # Literal price
             if ad_price_container:
                 price_text = ad_price_container.find("h3").get_text(strip=True)
                 price = "".join(filter(str.isdigit, price_text))
