@@ -1,5 +1,5 @@
 from colors import OKGREEN, ENDC, WARNING, OKCYAN,\
-    FAIL, OKBLUE
+    FAIL, OKBLUE, HEADER
 import requests
 from bs4 import BeautifulSoup
 
@@ -23,7 +23,7 @@ for url in URLS:
         price_text = ad_price_container.find('h3').get_text(strip=True)
         results = ''.join(filter(str.isdigit, price_text))
 
-        print(f"{OKBLUE}results: {WARNING}{results}{ENDC}")
+        print(f"{HEADER}results: {results}{ENDC}")
     else:
         print(f"{FAIL}No price found{ENDC}")
 
