@@ -4,3 +4,6 @@ What I need?
     - price
     - metrage
     - room quantity
+
+- Do I really need GUI for that app?
+- I could eassily store that in json files with ability to update that "database".
